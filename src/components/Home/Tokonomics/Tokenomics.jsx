@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import React from "react";
 import {
   CardSubTitle,
@@ -15,23 +15,21 @@ import {
 } from "./TokenomicStyles";
 
 const leftList = [
-  { bgColor: "#00FF00", title: "Total Supply", subTitle: "1,000,000,000" },
-  { bgColor: "#FF974B", title: "Pre Sale", subTitle: "1%" },
-  { bgColor: "#05D39F  ", title: "Advisors and Ambassadors", subTitle: "5%" },
+  { bgColor: "#FF7981  ", title: "Private Sale", subTitle: "1%" },
+  { bgColor: "#FF974B", title: "Pre Sale", subTitle: "29%" },
+  { bgColor: "#BC570E  ", title: "Liquidity", subTitle: "20%" },
+  { bgColor: "#BB05D3  ", title: "Team", subTitle: "10%" },
   { bgColor: "#E6115C  ", title: "Marketing", subTitle: "10%" },
-  { bgColor: "#FFF369  ", title: "Development", subTitle: "10%" },
-];
-const rightList = [
-  { bgColor: "#FF7981  ", title: "Private Sale", subTitle: "0.5%" },
-  { bgColor: "#BC570E  ", title: "Liquidity", subTitle: "48.5%%" },
+  { bgColor: "#05D39F  ", title: "Advisors and Ambassadors", subTitle: "5%" },
   {
     bgColor: "#4BFF91  ",
     title: "Partnership and Community Giveaway",
     subTitle: "5%",
   },
-  { bgColor: "#BB05D3  ", title: "Team", subTitle: "10%" },
+  { bgColor: "#FFF369  ", title: "Development", subTitle: "10%" },
   { bgColor: "#05D39F", title: "Charity", subTitle: "10%" },
 ];
+const rightList = [];
 
 function Tokenomics() {
   return (
@@ -54,50 +52,29 @@ function Tokenomics() {
       <MainContentBox>
         <CardMainBox>
           {/* //!LeftCard */}
-          <CardChildBox>
+          <Grid container spacing={2}>
             {leftList.map((data, index) => (
-              <ListBox key={index}>
-                {/* // !color Box */}
-                <Box
-                  sx={{
-                    height: "15px",
-                    width: "15px",
-                    backgroundColor: data.bgColor,
-                    marginRight: "10px",
-                    marginLeft: "10px",
-                  }}
-                ></Box>
+              <Grid key={index} item lg={6} md={6} sm={6} xs={12}>
+                <ListBox>
+                  {/* // !color Box */}
+                  <Box
+                    sx={{
+                      minHeight: "15px",
+                      minWidth: "15px",
+                      backgroundColor: data.bgColor,
+                      marginRight: "10px",
+                      marginLeft: "10px",
+                    }}
+                  ></Box>
 
-                <Box>
-                  <CardTitle>{data.title}</CardTitle>
-                  <CardSubTitle>{data.subTitle}</CardSubTitle>
-                </Box>
-              </ListBox>
+                  <Box>
+                    <CardTitle>{data.title}</CardTitle>
+                    <CardSubTitle>{data.subTitle}</CardSubTitle>
+                  </Box>
+                </ListBox>
+              </Grid>
             ))}
-          </CardChildBox>
-
-          {/* //!Right Card */}
-          <CardChildBox>
-            {rightList.map((data, index) => (
-              <ListBox>
-                {/* // !color Box */}
-                <Box
-                  sx={{
-                    height: "15px",
-                    width: "15px",
-                    backgroundColor: data.bgColor,
-                    marginRight: "10px",
-                    marginLeft: "10px",
-                  }}
-                ></Box>
-
-                <Box>
-                  <CardTitle>{data.title}</CardTitle>
-                  <CardSubTitle>{data.subTitle}</CardSubTitle>
-                </Box>
-              </ListBox>
-            ))}
-          </CardChildBox>
+          </Grid>
         </CardMainBox>
         {/* //!Image */}
         <ImageBox>

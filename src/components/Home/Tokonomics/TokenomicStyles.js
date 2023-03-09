@@ -65,6 +65,8 @@ export const ImageBox = styled(Box)(({ theme }) => ({
 export const CardMainBox = styled(Box)(({ theme }) => ({
   width: "100%",
   display: "flex",
+  marginRight: "20px",
+  marginTop: "16px",
 
   [theme.breakpoints.down(700)]: {
     flexDirection: "column",
