@@ -1,5 +1,5 @@
 import { Box, IconButton, styled } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import NexusGalaxy from "./NexusGalaxy";
@@ -78,6 +78,11 @@ function HeroSection() {
       img: "assets/Images/nexusgame.png",
     },
   ];
+  const [name, setName] = useState(false);
+  const handleClick = () => {
+    console.log("hello");
+    setName(!name);
+  };
   const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
     const {
       carouselState: { currentSlide },
@@ -107,7 +112,13 @@ function HeroSection() {
         >
           <ArrowBackIosIcon sx={{ color: "white" }} />
         </IconButton>
-        <IconButton onClick={() => next()} sx={{ backgroundColor: "#A753BD" }}>
+        <IconButton
+          onClick={() => {
+            next();
+            handleClick();
+          }}
+          sx={{ backgroundColor: "#A753BD" }}
+        >
           <ArrowForwardIosIcon sx={{ color: "white" }} />
         </IconButton>
       </Box>
@@ -136,6 +147,7 @@ function HeroSection() {
         {DataList.map((data, index) => (
           <NexusGalaxy
             key={index}
+            name={name}
             title={data.title}
             coloredTitle={data.coloredTitle}
             upperTitle={data?.upperTitle}

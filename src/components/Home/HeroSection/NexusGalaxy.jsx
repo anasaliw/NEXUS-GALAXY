@@ -15,15 +15,25 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function NexusGalaxy({ title, upperTitle, coloredTitle, paragraph, images }) {
+function NexusGalaxy({
+  title,
+  upperTitle,
+  coloredTitle,
+  paragraph,
+  images,
+  name,
+}) {
+  const responsive = useMediaQuery("(min-width:1000px)");
   useEffect(() => {
-    AOS.init({ duration: 1500 });
-  }, []);
+    AOS.init({ duration: 1000 });
+
+    console.log("effect");
+  }, [name]);
 
   //   const responsive = useMediaQuery("(min-width:800px)");
   return (
     <ParentBox>
-      <LeftContainer data-aos='fade-down'>
+      <LeftContainer data-aos='fade-down' data-aos-once={false}>
         <Box>
           <Title component='span'>{upperTitle}</Title>
           <Title component='span'>{title}</Title> &nbsp; &nbsp;
@@ -40,26 +50,31 @@ function NexusGalaxy({ title, upperTitle, coloredTitle, paragraph, images }) {
       </LeftContainer>
 
       <RightContainer>
-        <Box className='parentBox'>
-          <Box
-            sx={{
-              height: "40px",
-              width: "60px",
-              borderRadius: "30px",
-              backgroundColor: "#A753BD",
-              marginRight: "10px",
-            }}
-          ></Box>
-          <Box
-            sx={{
-              height: "40px",
-              width: "150px",
-              borderRadius: "30px",
-              backgroundColor: "#A753BD",
-            }}
-          ></Box>
-        </Box>
-        <Box sx={{ height: "auto", width: "500px" }}>
+        {responsive ? (
+          <Box className='parentBox'>
+            <Box
+              sx={{
+                height: "40px",
+                width: "60px",
+                borderRadius: "30px",
+                backgroundColor: "#A753BD",
+                marginRight: "10px",
+              }}
+            ></Box>
+            <Box
+              sx={{
+                height: "40px",
+                width: "150px",
+                borderRadius: "30px",
+                backgroundColor: "#A753BD",
+              }}
+            ></Box>
+          </Box>
+        ) : (
+          ""
+        )}
+
+        <Box sx={{ height: "auto", width: { lg: "500px" } }}>
           <img className='mainImage' src={images} alt='heroImg' />
         </Box>
       </RightContainer>
