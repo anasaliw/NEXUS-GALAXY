@@ -12,6 +12,26 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+#btn:not(:active) {
+  transition: background-color 1000ms;
+  transition: 3s;
+  transition: margin-top 20px;
+  transition: rotateY(100deg);
+  transition: width 300px step-end;
+  transition: height 300px step-end;
+}
+
+#btn:active {
+  background: red;
+  margin-left: 20px;
+  transform: rotateY(100deg);
+  width: 300px;
+  height: 300px;
+}
+#btn {
+  width: 200px;
+  height: 200px;
+}
 
 .App-header {
   background-color: #282c34;

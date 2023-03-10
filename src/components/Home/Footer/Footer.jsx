@@ -23,7 +23,7 @@ function Footer() {
             }}
           >
             <Link
-              href='https://t.me/nxsgalaxy'
+              href='https://twitter.com/nxsgalaxy'
               target='_blank'
               style={{ textDecoration: "none", color: "#072432" }}
             >
@@ -33,7 +33,7 @@ function Footer() {
             </Link>
 
             <Link
-              href='https://twitter.com/nxsgalaxy'
+              href='https://t.me/nxsgalaxy'
               target='_blank'
               style={{ textDecoration: "none", color: "#072432" }}
             >
@@ -42,7 +42,7 @@ function Footer() {
               </IconBox>
             </Link>
             <Link
-              href='https://twitter.com/nxsgalaxy'
+              href='https://discord.com/invite/2fgdJ5wATu'
               target='_blank'
               style={{ textDecoration: "none", color: "#072432" }}
             >
