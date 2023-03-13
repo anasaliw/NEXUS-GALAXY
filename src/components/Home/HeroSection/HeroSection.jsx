@@ -135,9 +135,9 @@ function HeroSection() {
         ssr={true} // means to render carousel on server-side.
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={3000}
-        customTransition='all 1.5s'
-        transitionDuration={2500}
+        autoPlaySpeed={6000}
+        customTransition='all 3.5s'
+        transitionDuration={3500}
         containerClass='carousel-container'
         removeArrowOnDeviceType={["", ""]}
         // renderButtonGroupOutside={true}
