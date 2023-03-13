@@ -5,6 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import NexusGalaxy from "./NexusGalaxy";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import "./HeroStyles.css";
 
 const HeaderBox = styled(Box)`
   min-height: 80vh;
@@ -133,9 +134,9 @@ function HeroSection() {
         draggable={true}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={2500}
-        customTransition='all 1s'
+        // autoPlay={true}
+        autoPlaySpeed={3000}
+        customTransition='all 1.5s'
         transitionDuration={2500}
         containerClass='carousel-container'
         removeArrowOnDeviceType={["", ""]}

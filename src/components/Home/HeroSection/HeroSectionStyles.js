@@ -3,10 +3,12 @@ import { Button, styled, Typography, Box, keyframes } from "@mui/material";
 export const ColoredTitle = styled("span")`
   font-size: 70px;
   color: #af56c5;
-  font-family: "Quicksand";
+  font-family: Rajdhani;
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -3px;
+  height: 89px;
+  overflow-y: hidden !important;
   @media (max-width: 900px) {
     font-size: 40px;
   }
@@ -14,7 +16,7 @@ export const ColoredTitle = styled("span")`
 export const Title = styled("span")`
   font-size: 70px;
   color: #fafafa;
-  font-family: "Quicksand";
+  font-family: "Rajdhani";
   font-weight: 700;
   line-height: 120%;
   @media (max-width: 900px) {
@@ -70,7 +72,12 @@ export const LeftContainer = styled(Box)(({ theme }) => ({
 }));
 export const RightContainer = styled(Box)(({ theme }) => ({
   width: "70%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexDirection: "column",
   position: "relative",
+
   [theme.breakpoints.down(700)]: {
     width: "100%",
     textAlign: "center",

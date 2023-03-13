@@ -33,7 +33,7 @@ function NexusGalaxy({
   //   const responsive = useMediaQuery("(min-width:800px)");
   return (
     <ParentBox>
-      <LeftContainer data-aos='fade-down' data-aos-once={false}>
+      <LeftContainer>
         <Box>
           <Title component='span'>{upperTitle}</Title>
           <Title component='span'>{title}</Title> &nbsp; &nbsp;
@@ -74,8 +74,16 @@ function NexusGalaxy({
           ""
         )}
 
-        <Box sx={{ height: "auto", width: { lg: "500px" } }}>
+        <Box
+          sx={{
+            height: "auto",
+            width: { lg: "500px" },
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <img className='mainImage' src={images} alt='heroImg' />
+          {/* <img src={images} alt='heroImg' /> */}
         </Box>
       </RightContainer>
     </ParentBox>
