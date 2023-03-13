@@ -4,7 +4,7 @@
   /* animation-iteration-count: infinite; */
   animation-name: textTransform;
   animation-timing-function: linear;
-  position: absolute;
+  /* position: absolute; */
 
   /* opacity: 0; */
 }

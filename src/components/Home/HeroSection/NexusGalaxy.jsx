@@ -11,6 +11,7 @@ import {
   Image,
   ColoredTitle,
   GradientImage,
+  ColoredTitle2,
 } from "./HeroSectionStyles";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,6 +25,7 @@ function NexusGalaxy({
   name,
 }) {
   const responsive = useMediaQuery("(min-width:1000px)");
+  const responsive2 = useMediaQuery("(min-width:850px)");
   useEffect(() => {
     AOS.init({ duration: 1000 });
 
@@ -37,7 +39,12 @@ function NexusGalaxy({
         <Box>
           <Title component='span'>{upperTitle}</Title>
           <Title component='span'>{title}</Title> &nbsp; &nbsp;
-          <ColoredTitle component='span'>{coloredTitle}</ColoredTitle>
+          {/* <br /> */}
+          {responsive2 ? (
+            <ColoredTitle component='span'>{coloredTitle}</ColoredTitle>
+          ) : (
+            <ColoredTitle2>{coloredTitle}</ColoredTitle2>
+          )}
         </Box>
         <br />
         <GradientImage src='assets/Images/divider.svg' alt='divider' />

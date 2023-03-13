@@ -9,6 +9,21 @@ export const ColoredTitle = styled("span")`
   letter-spacing: -3px;
   height: 89px;
   overflow-y: hidden !important;
+  position: absolute;
+  @media (max-width: 900px) {
+    font-size: 40px;
+  }
+`;
+export const ColoredTitle2 = styled(Typography)`
+  font-size: 70px;
+  color: #af56c5;
+  font-family: Rajdhani;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -3px;
+  height: 89px;
+  overflow-y: hidden !important;
+  /* position: absolute; */
   @media (max-width: 900px) {
     font-size: 40px;
   }
