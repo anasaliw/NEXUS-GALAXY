@@ -91,7 +91,7 @@ export const RightContainer = styled(Box)(({ theme }) => ({
   alignItems: "center",
   justifyContent: "center",
   flexDirection: "column",
-  position: "relative",
+  // position: "relative",
 
   [theme.breakpoints.down(700)]: {
     width: "100%",

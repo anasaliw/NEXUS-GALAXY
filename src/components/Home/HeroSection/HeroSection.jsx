@@ -134,7 +134,7 @@ function HeroSection() {
         draggable={true}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
-        autoPlay={true}
+        // autoPlay={true}
         autoPlaySpeed={6000}
         customTransition='all 3.5s'
         transitionDuration={3500}

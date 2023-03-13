@@ -12,7 +12,7 @@ export const ListBox = styled(Box)(({ theme }) => ({
   backgroundColor: "#041420",
   display: "flex",
   alignItems: "center",
-  padding: "15px 30px 15px 5px",
+  padding: "15px 15px 15px 5px",
   [theme.breakpoints.down(1150)]: {
     minHeight: "75px",
   },
