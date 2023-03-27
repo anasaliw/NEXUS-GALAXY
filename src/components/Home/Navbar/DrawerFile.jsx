@@ -16,7 +16,7 @@ const Text = styled(Typography)(({ theme }) => ({
   fontWeight: "700",
   letterSpacing: "3px",
   fontSize: "20px",
-  marginTop: "20px",
+  marginTop: "10px",
   marginLeft: "20px",
   lineHeight: "140%",
   textDecoration: "none",
@@ -36,14 +36,14 @@ function DrawerFile({ open, toggleDrawer }) {
       PaperProps={{
         sx: {
           background: "transparent",
-          height: "40vh",
+          height: "auto",
           backdropFilter: "blur(30px)",
         },
       }}
     >
       <Box
         sx={{
-          marginTop: "40px",
+          marginTop: "10px",
           marginBottom: "10px",
           marginLeft: "auto",
           marginRight: "20px",
@@ -61,7 +61,7 @@ function DrawerFile({ open, toggleDrawer }) {
       >
         <Close onClick={toggleDrawer} />
       </Box>
-      <Divider style={{ backgroundColor: "gray", marginBottom: "30px" }} />
+      <Divider style={{ backgroundColor: "gray", marginBottom: "0px" }} />
       <List>
         <Link
           href='#hero'

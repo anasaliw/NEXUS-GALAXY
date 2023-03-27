@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import HeroSection from "./components/Home/HeroSection/HeroSection";
 import Tokenomics from "./components/Home/Tokonomics/Tokenomics";
 import Footer from "./components/Home/Footer/Footer";
+import Partners from "./components/Home/Partner/Partners";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <HeroSection />
         <Tokenomics />
+        <Partners />
         <Footer />
       </BrowserRouter>
     </React.Fragment>

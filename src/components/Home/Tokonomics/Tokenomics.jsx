@@ -15,6 +15,7 @@ import {
 } from "./TokenomicStyles";
 
 const leftList = [
+  { bgColor: "#00FF00", title: "Total Supply", subTitle: "1,000,000,000" },
   { bgColor: "#FF7981  ", title: "Private Sale", subTitle: "1%" },
   { bgColor: "#FF974B", title: "Pre Sale", subTitle: "29%" },
   { bgColor: "#BC570E  ", title: "Liquidity", subTitle: "20%" },

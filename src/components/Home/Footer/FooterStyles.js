@@ -15,6 +15,7 @@ export const IconBox = styled(Box)`
   border-radius: 5px;
   transition: 0.5s;
   cursor: pointer;
+  color: #a753bd;
   &:hover {
     background-color: #a753bd;
     color: white;
