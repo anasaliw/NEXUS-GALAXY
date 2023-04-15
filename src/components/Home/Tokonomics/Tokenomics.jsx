@@ -15,20 +15,22 @@ import {
 } from "./TokenomicStyles";
 
 const leftList = [
-  { bgColor: "#00FF00", title: "Total Supply", subTitle: "1,000,000,000" },
-  { bgColor: "#FF7981  ", title: "Private Sale", subTitle: "1%" },
-  { bgColor: "#FF974B", title: "Pre Sale", subTitle: "29%" },
+  { bgColor: "#FF7981  ", title: "Private Sale", subTitle: "5%" },
+  { bgColor: "#FF974B", title: "Pre Sale", subTitle: "15%" },
   { bgColor: "#BC570E  ", title: "Liquidity", subTitle: "20%" },
   { bgColor: "#BB05D3  ", title: "Team", subTitle: "10%" },
-  { bgColor: "#E6115C  ", title: "Marketing", subTitle: "10%" },
-  { bgColor: "#05D39F  ", title: "Advisors and Ambassadors", subTitle: "5%" },
+  { bgColor: "#FFF369  ", title: "Development", subTitle: "10%" },
+  { bgColor: "#05D39F", title: "Charity", subTitle: "10%" },
+  { bgColor: "#E6115C  ", title: "Marketing", subTitle: "5%" },
   {
     bgColor: "#4BFF91  ",
     title: "Partnership and Community Giveaway",
     subTitle: "5%",
   },
-  { bgColor: "#FFF369  ", title: "Development", subTitle: "10%" },
-  { bgColor: "#05D39F", title: "Charity", subTitle: "10%" },
+  { bgColor: "#00FF00", title: "Burnt Before Launch", subTitle: "20%" },
+
+  { bgColor: "#00FF00", title: "Total Supply", subTitle: "1,000,000,000" },
+  // { bgColor: "#05D39F  ", title: "Advisors and Ambassadors", subTitle: "5%" },
 ];
 const rightList = [];
 
