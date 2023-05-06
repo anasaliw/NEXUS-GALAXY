@@ -55,7 +55,7 @@ function HeroSection() {
       title: "NFT",
       coloredTitle: "Marketplace",
       paragraph:
-        "Nexus Galaxy has a Multi-Chain NFT Marketplace like on BSC, ETH, MATIC and etc..... with a 0% transection fee on all chains with more benefits.......",
+        "Nexus Galaxy has a Multi-Chain NFT Marketplace like on BSC, ETH, Polygon and etc..... with a 0% transection fee on all chains with more benefits.......",
       img: "assets/Images/nexus-mobile.png",
     },
     {
