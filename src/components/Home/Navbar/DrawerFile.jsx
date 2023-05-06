@@ -79,6 +79,24 @@ function DrawerFile({ open, toggleDrawer }) {
           <Text style={{ padding: "0px 12px" }}>TOKENOMICS</Text>
           <Divider style={{ backgroundColor: "gray" }} />
         </Link>
+        <Link
+          href='https://bridge.nexusgalaxy.io'
+          target='_blank'
+          style={{ textDecoration: "none" }}
+          onClick={toggleDrawer}
+        >
+          <Text style={{ padding: "0px 12px" }}>BRIDGE </Text>
+          <Divider style={{ backgroundColor: "gray" }} />
+        </Link>
+        <Link
+          href='https://testnet.nexusgalaxy.io'
+          target='_blank'
+          style={{ textDecoration: "none" }}
+          onClick={toggleDrawer}
+        >
+          <Text style={{ padding: "0px 12px" }}>NFT Marketplace </Text>
+          <Divider style={{ backgroundColor: "gray" }} />
+        </Link>
 
         {/* <Link href='#' target='_blank' style={{ textDecoration: "none" }}>
           <Text style={{ padding: "0px 12px" }}>Token</Text>

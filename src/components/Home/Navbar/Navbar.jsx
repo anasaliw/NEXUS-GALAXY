@@ -31,7 +31,7 @@ function Navbar() {
   const toggleDrawer = () => {
     setOpen(!open);
   };
-  const responsive = useMediaQuery("(min-width:600px)");
+  const responsive = useMediaQuery("(min-width:800px)");
   console.log(responsive);
   return (
     <>
@@ -43,6 +43,12 @@ function Navbar() {
               <NavBox>
                 <Link href='#hero'>HOME</Link>
                 <Link href='#tokenomics'>TOKENOMICS</Link>
+                <Link href='https://bridge.nexusgalaxy.io' target='_blank'>
+                  BRIDGE
+                </Link>
+                <Link href='https://testnet.nexusgalaxy.io' target='_blank'>
+                  NFT Marketplace
+                </Link>
               </NavBox>
             </>
           ) : (

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const NavBox = styled(Box)`
   margin-left: auto;
-  margin-right: 200px;
+  margin-right: 60px;
   display: flex;
   & > a {
     text-decoration: none;
@@ -28,6 +28,9 @@ export const NavBox = styled(Box)`
     font-weight: 600;
     border-bottom: 2px solid purple;
     border: 1px solid red;
+  }
+  @media (max-width: 1000px) {
+    margin-right: 20px;
   }
   @media (max-width: 800px) {
     margin-right: 50px;
