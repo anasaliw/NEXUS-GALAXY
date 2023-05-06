@@ -81,7 +81,7 @@ function Tokenomics() {
         </CardMainBox>
         {/* //!Image */}
         <ImageBox>
-          <Image src='assets/Images/graph.png' alt='graphImg' />
+          <Image src='assets/Images/graph2.png' alt='graphImg' />
         </ImageBox>
         {/* //!Right Image Ends here */}
       </MainContentBox>

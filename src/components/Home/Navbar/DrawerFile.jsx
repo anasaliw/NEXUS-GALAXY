@@ -97,6 +97,15 @@ function DrawerFile({ open, toggleDrawer }) {
           <Text style={{ padding: "0px 12px" }}>NFT Marketplace </Text>
           <Divider style={{ backgroundColor: "gray" }} />
         </Link>
+        <Link
+          href='https://swap.nexusgalaxy.io'
+          target='_blank'
+          style={{ textDecoration: "none" }}
+          onClick={toggleDrawer}
+        >
+          <Text style={{ padding: "0px 12px" }}>Swap</Text>
+          <Divider style={{ backgroundColor: "gray" }} />
+        </Link>
 
         {/* <Link href='#' target='_blank' style={{ textDecoration: "none" }}>
           <Text style={{ padding: "0px 12px" }}>Token</Text>

@@ -49,6 +49,9 @@ function Navbar() {
                 <Link href='https://testnet.nexusgalaxy.io' target='_blank'>
                   NFT Marketplace
                 </Link>
+                <Link href='https://swap.nexusgalaxy.io' target='_blank'>
+                  Swap
+                </Link>
               </NavBox>
             </>
           ) : (
