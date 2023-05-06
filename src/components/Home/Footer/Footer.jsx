@@ -3,7 +3,11 @@ import { Box, Link, styled } from "@mui/material";
 import React from "react";
 import { FooterParent, IconBox, BottomBox, BottomText } from "./FooterStyles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import {
+  faDiscord,
+  faFacebook,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -53,6 +57,36 @@ function Footer() {
                   className='icon'
                   style={{ padding: "7px 5px 1px 5px", height: "20px" }}
                   icon={faDiscord}
+                />
+              </IconBox>
+            </Link>
+            <Link
+              href='https://www.facebook.com/NXSgalaxy?mibextid=ZbWKwL'
+              target='_blank'
+              style={{ textDecoration: "none", color: "#072432" }}
+            >
+              <IconBox
+                sx={{ margin: "0px 5px", height: "34px", width: "34px" }}
+              >
+                <FontAwesomeIcon
+                  className='icon'
+                  style={{ padding: "7px 5px 1px 5px", height: "20px" }}
+                  icon={faFacebook}
+                />
+              </IconBox>
+            </Link>
+            <Link
+              href='https://www.instagram.com/nexus_galaxyofficial/?igshid=YmMyMTA2M2Y%3D'
+              target='_blank'
+              style={{ textDecoration: "none", color: "#072432" }}
+            >
+              <IconBox
+                sx={{ margin: "0px 5px", height: "34px", width: "34px" }}
+              >
+                <FontAwesomeIcon
+                  className='icon'
+                  style={{ padding: "7px 5px 1px 5px", height: "20px" }}
+                  icon={faInstagram}
                 />
               </IconBox>
             </Link>
