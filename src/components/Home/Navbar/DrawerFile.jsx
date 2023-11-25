@@ -106,10 +106,6 @@ function DrawerFile({ open, toggleDrawer }) {
           <Text style={{ padding: "0px 12px" }}>Swap</Text>
           <Divider style={{ backgroundColor: "gray" }} />
         </Link>
-
-        {/* <Link href='#' target='_blank' style={{ textDecoration: "none" }}>
-          <Text style={{ padding: "0px 12px" }}>Token</Text>
-        </Link> */}
       </List>
     </Drawer>
   );
